@@ -1,5 +1,4 @@
 import { useGSAP } from "@gsap/react";
-// import { ReactComponent as GsapIcon } from '../assets/gsap.svg';
 import React, { useRef } from "react";
 import gsap from "gsap";
 const skillsData = {
@@ -31,12 +30,12 @@ const SkillBox = ({ skill }: { skill: { name: string; icon: string } }) => {
   return (
     <div
       key={skill.name}
-      className="flex items-center gap-1 md:gap-1.5 px-1.5 md:px-2 py-0.5 md:py-2 border border-gray-300 dark:border-gray-700 rounded-md hover:border-[#FFA500] dark:hover:border-[#FFA500] hover:-translate-y-0.5 transition-all duration-300 group cursor-pointer whitespace-nowrap w-fit bg-white bg-opacity-50 dark:bg-transparent"
+      className="flex items-center gap-1 md:gap-1.5 px-1.5 md:px-2 py-0.5 md:py-2 border border-gray-300 dark:border-gray-700 rounded-md transition-all duration-300 group cursor-default whitespace-nowrap w-fit bg-white bg-opacity-50 dark:bg-transparent"
     >
       <i
-        className={`${skill.icon} text-base md:text-lg text-gray-700 dark:text-gray-300 group-hover:text-[#FFA500] dark:group-hover:text-[#FFA500]`}
+        className={`${skill.icon} text-base md:text-lg text-gray-700 dark:text-gray-300`}
       ></i>
-      <span className="text-[10px] md:text-xs text-gray-700 dark:text-gray-300 group-hover:text-[#FFA500] dark:group-hover:text-[#FFA500]">
+      <span className="text-[10px] md:text-xs text-gray-700 dark:text-gray-300 ">
         {skill.name}
       </span>
     </div>
@@ -89,7 +88,7 @@ const Skills = (): React.ReactElement => {
               ))}
               <div
                 key={"gsap"}
-                className="flex items-center gap-1 md:gap-1.5 px-1.5 md:px-2 py-0.5 md:py-2 border border-gray-300 dark:border-gray-700 rounded-md hover:border-[#FFA500] dark:hover:border-[#FFA500] hover:-translate-y-0.5 transition-all duration-300 group cursor-pointer whitespace-nowrap w-fit bg-white bg-opacity-50 dark:bg-transparent"
+                className="flex items-center gap-1 md:gap-1.5 px-1.5 md:px-2 py-0.5 md:py-2 border border-gray-300 dark:border-gray-700 rounded-md transition-all duration-300 group cursor-default whitespace-nowrap w-fit bg-white bg-opacity-50 dark:bg-transparent"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

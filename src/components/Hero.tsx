@@ -12,6 +12,12 @@ export default function Hero() {
   const svgWrapperRef = useRef<HTMLDivElement>(null);
   const [showSVG, setShowSVG] = useState(true);
   useGSAP(() => {
+
+    if (window.innerWidth < 1024) {
+    setShowSVG(false); 
+    return;
+  }
+
     const t1 = gsap.timeline();
     t1.to(".vi-mask-group", {
       scale: 15,

@@ -21,7 +21,7 @@ interface ProjectProps {
 
 export default function Project ({title, description, techUsed, img, link}: ProjectProps) {
     return (
-        <a href={link} target="_blank" className="relative w-full m-4 py-8 group cursor-pointer">
+        <a href={link} target="_blank" className="relative w-full p-4 py-8 group cursor-pointer">
   <div className="lg:absolute right-10 hidden md:block top-1/2 -translate-y-1/2 z-10 h-0 w-72 bg-red-400 md:group-hover:h-[200%] duration-300">
     <img
       src={img}
